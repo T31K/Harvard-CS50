@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped table-hover">
+        <thead>
+            <th scope="col">Symbol</th>
+            <th scope="col">Total Shares</th>
+            <th scope="col">Average Price</th>
+            <th scope="col">Current Price</th>
+            <th scope="col">TOTAL Value</th>
+        </thead>
+        <tbody>
+            {% for t in data %}
+                {% if t["total_shares"] > 0 %}
+                    <tr>
+                        <th scope="row">{{ t["Symbol"] }}</th>
+                        <td>{{ t["total_shares"] }}</td>
+                        <td>{{ t["avg_price"] | usd }}</td>
+                        <td>{{ t["cur_price"] }}</td>
+                        <td>{{ t["cur_value"] | usd }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            {% if cash and total %}
+                <tr>
+                    <th scope="row">CASH</th>
+                    <td colspan=3></td>
+                    <td>{{ usd(cash[0]["cash"]) }}</td>
+                </tr>
+                <tr>
+                    <td colspan=4></td>
+                    <th scope="row">{{ total | usd }}</th>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block jumbo %}
+    <br>
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover table-striped">
+        <thead>
+            <th scope="col">Symbol</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Created At</th>
+        </thead>
+        <tbody>
+            {% for t in data %}
+                <tr>
+                    <th scope="row">{{ t["Symbol"] }}</th>
+                    <td>{{ t["Shares"] }}</td>
+                    <td>{{ usd(t["Price"]) }}</td>
+                    <td>{{ t["CreatedAt"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% if not data %}
+        <h5>Buy Some Shares!</h5>
+    {% endif %}
+{% endblock %}

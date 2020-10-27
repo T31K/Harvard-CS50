@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="static/styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<head> <meta http-equiv="refresh" content="15"/> </head>
+<title>BUS APP</title>
+
+    <div class="container">
+    <h1 class="mt-5"> Opp Blk 515</h1>
+    <div class="d-flex flex-column flex-md-row justify-content-center">
+    <button type="button" class="btn btn-primary btn-lg">Opp Blk 515</button>
+    <button type="button" class="btn btn-warning btn-lg">Blk 612</button>
+    </div>
+    <table class="table table-borderless">
+    <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Current</th>
+      <th scope="col">Next</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <!-- BUS NO 3 -->
+    <tr>
+        <th scope="row">Bus #3</th>
+        {% if bus_3_data == "05 mins" or bus_3_data == "04 mins" or bus_3_data == "03 mins" or bus_3_data == "02 mins" or bus_3_data == "01 mins" %}
+        <td style="color:green">{{ bus_3_data }}</td>
+        {% else %}
+        <td>{{ bus_3_data }}</td>
+        {% endif %}
+        {% if bus_3_next_data == "05 mins" or bus_3_next_data == "04 mins" or bus_3_next_data == "03 mins" or bus_3_next_data == "02 mins" or bus_3_next_data == "01 mins" %}
+        <td style="color:green">{{ bus_3_next_data }}</td>
+        {% else %}
+        <td>{{ bus_3_next_data }}</td>
+        {% endif %}
+    </tr>
+
+    <!-- BUS NO 53 -->
+    <tr>
+      <th scope="row">Bus #53</th>
+        {% if bus_53_data == "05 mins" or bus_53_data == "04 mins" or bus_53_data == "03 mins" or bus_53_data == "02 mins" or bus_53_data == "01 mins" %}
+        <td style="color:green">{{ bus_53_data }}</td>
+        {% else %}
+        <td>{{ bus_53_data }}</td>
+        {% endif %}
+        {% if bus_53_next_data == "05 mins" or bus_53_next_data == "04 mins" or bus_53_next_data == "03 mins" or bus_53_next_data == "02 mins" or bus_53_next_data == "01 mins" %}
+        <td style="color:green">{{ bus_53_next_data }}</td>
+        {% else %}
+        <td>{{ bus_53_next_data }}</td>
+        {% endif %}
+    </tr>
+
+    <!-- BUS 89-->
+    <tr>
+      <th scope="row">Bus #89</th>
+        {% if bus_89_data == "05 mins" or bus_89_data == "04 mins" or bus_89_data == "03 mins" or bus_89_data == "02 mins" or bus_89_data == "01 mins" %}
+        <td style="color:green">{{ bus_89_data }}</td>
+        {% else %}
+        <td>{{ bus_89_data }}</td>
+        {% endif %}
+        {% if bus_89_next_data == "05 mins" or bus_89_next_data == "04 mins" or bus_89_next_data == "03 mins" or bus_89_next_data == "02 mins" or bus_89_next_data == "01 mins" %}
+        <td style="color:green">{{ bus_89_next_data }}</td>
+        {% else %}
+        <td>{{ bus_89_next_data }}</td>
+        {% endif %}
+    </tr>
+
+    <!-- BUS NO 109 -->
+    <tr>
+      <th scope="row">Bus #109</th>
+        {% if bus_109_data == "05 mins" or bus_109_data == "04 mins" or bus_109_data == "03 mins" or bus_109_data == "02 mins" or bus_109_data == "01 mins" %}
+        <td style="color:green">{{ bus_109_data }}</td>
+        {% else %}
+        <td>{{ bus_109_data }}</td>
+        {% endif %}
+        {% if bus_109_next_data == "05 mins" or bus_109_next_data == "04 mins" or bus_109_next_data == "03 mins" or bus_109_next_data == "02 mins" or bus_109_next_data == "01 mins" %}
+        <td style="color:green">{{ bus_109_next_data }}</td>
+        {% else %}
+        <td>{{ bus_109_next_data }}</td>
+        {% endif %}
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+    <!--
+    <button type="button" class="btn btn-warning">#53</button>
+    <button type="button" class="btn btn-success">#89</button>
+    <button type="button" class="btn btn-primary">#109</button>
+    -->
+<script>
+
+
+
+</script>
+</html>

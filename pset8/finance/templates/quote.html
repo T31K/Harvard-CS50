@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block jumbo %}
+    <br>
+    Get a Quote
+{% endblock %}
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+
+    {% if symbol %}
+        <hr/>
+        <h3>A share of {{ symbol }} costs {{ price }}</h3>
+    {% endif %}
+{% endblock %}

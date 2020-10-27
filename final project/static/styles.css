@@ -1,0 +1,29 @@
+h1{
+    font-size:60px;
+    text-align:center;
+    align-items: center;
+}
+
+.button{
+    display:inline-block !important;
+    vertical-align:middle !important;
+    margin-left: 600px !important;
+    margin-top: 200px !important;
+}
+
+.table{
+    border-radius: 30px 30px 30px 30px !important;
+    background: #D2D2D2;
+    width: 92% !important;
+    margin-left: 10px !important;
+    float: none !important;
+    margin: 50px 50px 50px 40px !important;
+    font-size: 70px !important;
+}
+
+td1{
+    width: 20% !important;
+    border-radius: 20px 20px 20px 20px !important;
+    background: #FFFFFF;
+}
+
