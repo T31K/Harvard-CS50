@@ -6,4 +6,8 @@ This is CS50x , Harvard University's introduction to the intellectual enterprise
 Students who earn a satisfactory score on 9 problem sets (i.e., programming assignments) and a final project are eligible for a certificate. This is a self-paced course–you may take CS50x on your own schedule.
 
 Here are all the 9 Problem Sets and 1 Final Project I have completed.
-All files have been extracted from CS50 AWS based IDE to GitHub
+All files have been extracted from CS50 AWS based IDE to GitHub.
+
+This repo is not intended for cheating purposes, please do not copy the source code and pass it as your own.
+
+<img src="https://raw.githubusercontent.com/T31K/Harvard-cs50/master/CS50%20Wong%20Teik%20Mun.png">
