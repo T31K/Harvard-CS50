@@ -8,6 +8,10 @@ Students who earn a satisfactory score on 9 problem sets (i.e., programming assi
 Here are all the 9 Problem Sets and 1 Final Project I have completed.
 All files have been extracted from CS50 AWS based IDE to GitHub.
 
-This repo is not intended for cheating purposes, please do not copy the source code and pass it as your own.
-
+Final Project REVAMPED with React (not covered in this course)
+:link: <a href="https://thebusetaapp.herokuapp.com">Live Demo</a>
+:link: <a href="https://github.com/T31K/busApp">Github Repo</a>
 <img src="https://raw.githubusercontent.com/T31K/Harvard-cs50/master/CS50%20Wong%20Teik%20Mun.png">
+
+
+This repo is not intended for cheating purposes, please do not copy the source code and pass it as your own.
